@@ -1,1 +1,8 @@
 # TIL
+Today I Learned by kasong lee
+<hr/>
+
+#### Added Log
+> 2017.12.10 Android <br/>
+> 2017.12.10 Markdown <br/>
+
