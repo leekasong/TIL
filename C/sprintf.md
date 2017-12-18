@@ -1,10 +1,11 @@
 # sprintf 사용시 주의사항
 
-</br>
+<br />
+
 ```
-  char buf[255] = {0,};
-  strcpy(buf, "abcdef");
-  sprintf(buf, "./%s", buf);
+char buf[255] = {0,};
+strcpy(buf, "abcdef");
+sprintf(buf, "./%s", buf);
 
 ```
 
@@ -21,10 +22,10 @@ sprintf의 동작은 두 번째 인자의 % 문법을 만날 때까지 문자열
 해결하려면 변수를 하나 더 쓸 수밖에 없다.
 
 ```
-    char buf[255] = { 0, };
-	strcpy(buf, "abcdef");
-	char *p_temp = malloc(strlen(buf) + 1 + 2);
-	sprintf(p_temp, "./%s", buf);
-	free(p_temp);
+char buf[255] = { 0, };
+strcpy(buf, "abcdef");
+char *p_temp = malloc(strlen(buf) + 1 + 2);
+sprintf(p_temp, "./%s", buf);
+free(p_temp);
 
 ```
