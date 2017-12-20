@@ -1,6 +1,6 @@
 # How to convert char \* to char \*[]
 
-### -> use standard function 'strtok()'
+### use standard function 'strtok()'
 
 strtok function breaks string into a series of tokens.  <br />
 so, add the tokens to array of char pointer.
