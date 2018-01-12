@@ -3,6 +3,7 @@
 
 ### intro
 <br/>
+
 * += operator
 
 ```
@@ -10,7 +11,8 @@
  str += _T(", CString");
  AfxMessageBox(str);
 ```
-![](../images/CString/intro.PNG)
+
+![](../../images/CString/intro.PNG)
 
 
 * MBCS
@@ -21,7 +23,7 @@
   ::MessageBoxA(NULL, szBuffer, "MBCS", MB_OK);
 
 ```
-![](../images/CString/MBCS.png)
+![](../../images/CString/MBCS.png)
 
 * Unicode
 
@@ -32,11 +34,11 @@
   wsprintf(wcsBuffer, L"ABV");
   ::MessageBox(NULL, wcsBuffer, L"MBCS", MB_OK);
 ```
-![](../images/CString/Unicode.png)
+![](../../images/CString/Unicode.png)
 
 
 ### Member function
-<br/>
+<br />
 
 * GetLength() , GetBuffer()
 
@@ -45,12 +47,12 @@ GetLength() returns the number of charters in a CString object
 GetBuffer() returns a pointer to the characters in the CString.
 ```
   CString str = _T("Test");
-	int nlength = str.GetLength();
-	//LPTSTR == TCHAR * : Long pointer
+  int nlength = str.GetLength();
+  //LPTSTR == TCHAR * : Long pointer
 
-	LPTSTR pBuffer = str.GetBuffer();
+  LPTSTR pBuffer = str.GetBuffer();
 ```
-![](../images/CString/GetLength.png)
+![](../../images/CString/GetLength.png)
 
 
 * CStringToWCHAR
@@ -59,25 +61,25 @@ use wsprintf()
 
 ```
   TCHAR wcsBuffer[32] = { 0 };
-	CString strData = _T("Hello");
+  CString strData = _T("Hello");
 
-	//Win32 API
-	::wsprintf(wcsBuffer, _T("%s"), strData);
+  //Win32 API
+  ::wsprintf(wcsBuffer, _T("%s"), strData);
 ```
 
-before : ![](../images/CString/CStringToWCHAR_1.png)
-<br/>after : ![](../images/CString/CStringToWCHAR_2.png)
+before : ![](../../images/CString/CStringToWCHAR_1.png)
+<br/>after : ![](../../images/CString/CStringToWCHAR_2.png)
 
 * Format
 
 ```
   CString strTmp;
-	strTmp.Format(_T("Data : %d"), 10);
-	AfxMessageBox(strTmp);
+  strTmp.Format(_T("Data : %d"), 10);
+  AfxMessageBox(strTmp);
 
 ```
 
-![](../images/CString/Format.png)
+![](../../images/CString/Format.png)
 
 
 * Array[]
@@ -87,12 +89,12 @@ before : ![](../images/CString/CStringToWCHAR_1.png)
   CString strTmp = _T("Hello, World!");
   TCHAR ch = strTmp[2];
   strTmp.SetAt(2, _T('L'));
-	AfxMessageBox(strTmp);
+  AfxMessageBox(strTmp);
 ```
-before operator[] : ![](../images/CString/Array.png)
-<br/>after operator[] : ![](../images/CString/Array2.png)
+before operator[] : ![](../../images/CString/Array.png)
+<br/>after operator[] : ![](../../images/CString/Array2.png)
 <br/>after setAt() :
-![](../images/CString/Array3.png)
+![](../../images/CString/Array3.png)
 
 
 * Trim
@@ -100,12 +102,12 @@ before operator[] : ![](../images/CString/Array.png)
 Trim() == trimLeft() + trimRight()
 ```
   CString strData = _T(" DATA");
-	TCHAR wcsBuffer[32];
-	strData.TrimLeft();
+  TCHAR wcsBuffer[32];
+  strData.TrimLeft();
 
-	wsprintf(wcsBuffer, _T("%s"), strData);
+  wsprintf(wcsBuffer, _T("%s"), strData);
 ```
-![](../images/CString/Trim.png)
+![](../../images/CString/Trim.png)
 
 * Find
 
@@ -114,23 +116,23 @@ Right() extracts the right part of a string.
 
 ```
   CString strPath = _T("C:\\Windows\\System32\\a.exe");
-	int nIndex = strPath.Find(_T("a.exe"));
-	if (nIndex >= 0) {
-		AfxMessageBox(strPath.Left(nIndex));
-		AfxMessageBox(strPath.Right(strPath.GetLength() - nIndex ));
-	}
+  int nIndex = strPath.Find(_T("a.exe"));
+  if (nIndex >= 0) {
+    AfxMessageBox(strPath.Left(nIndex));
+    AfxMessageBox(strPath.Right(strPath.GetLength() - nIndex ));
+  }
 ```
-![](../images/CString/Find.png)
-![](../images/CString/Find2.png)
+![](../../images/CString/Find.png)
+![](../../images/CString/Find2.png)
 
 
 * ReverseFind
 
 ```
-CString strPath = _T("C:\\Windows\\System32\\a.exe");
-	int nIndex = strPath.ReverseFind(_T('\\'));
-	AfxMessageBox(strPath.Left(nIndex)); // 인덱스 뒤의 문자열을 뺀다.
-	AfxMessageBox(strPath.Right(strPath.GetLength() - nIndex - 1)); //문자열의 뒤에서부터 개수만큼 얻어온다.
+ CString strPath = _T("C:\\Windows\\System32\\a.exe");
+ int nIndex = strPath.ReverseFind(_T('\\'));
+ AfxMessageBox(strPath.Left(nIndex));
+ AfxMessageBox(strPath.Right(strPath.GetLength() - nIndex - 1));
 ```
-![](../images/CString/ReverseFind.png)
-![](../images/CString/ReverseFind2.png)
+![](../../images/CString/ReverseFind.png)
+![](../../images/CString/ReverseFind2.png)
