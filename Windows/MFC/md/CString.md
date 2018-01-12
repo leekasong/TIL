@@ -23,7 +23,7 @@
   ::MessageBoxA(NULL, szBuffer, "MBCS", MB_OK);
 
 ```
-![](../../images/CString/MBCS.png)
+![](../../images/CString/MBCS.PNG)
 
 * Unicode
 
@@ -34,7 +34,7 @@
   wsprintf(wcsBuffer, L"ABV");
   ::MessageBox(NULL, wcsBuffer, L"MBCS", MB_OK);
 ```
-![](../../images/CString/Unicode.png)
+![](../../images/CString/Unicode.PNG)
 
 
 ### Member function
@@ -52,7 +52,7 @@ GetBuffer() returns a pointer to the characters in the CString.
 
   LPTSTR pBuffer = str.GetBuffer();
 ```
-![](../../images/CString/GetLength.png)
+![](../../images/CString/GetLength.PNG)
 
 
 * CStringToWCHAR
@@ -67,8 +67,8 @@ use wsprintf()
   ::wsprintf(wcsBuffer, _T("%s"), strData);
 ```
 
-before : ![](../../images/CString/CStringToWCHAR_1.png)
-<br/>after : ![](../../images/CString/CStringToWCHAR_2.png)
+before : ![](../../images/CString/CStringToWCHAR_1.PNG)
+<br/>after : ![](../../images/CString/CStringToWCHAR_2.PNG)
 
 * Format
 
@@ -79,7 +79,7 @@ before : ![](../../images/CString/CStringToWCHAR_1.png)
 
 ```
 
-![](../../images/CString/Format.png)
+![](../../images/CString/Format.PNG)
 
 
 * Array[]
@@ -91,10 +91,10 @@ before : ![](../../images/CString/CStringToWCHAR_1.png)
   strTmp.SetAt(2, _T('L'));
   AfxMessageBox(strTmp);
 ```
-before operator[] : ![](../../images/CString/Array.png)
-<br/>after operator[] : ![](../../images/CString/Array2.png)
+before operator[] : ![](../../images/CString/Array.PNG)
+<br/>after operator[] : ![](../../images/CString/Array2.PNG)
 <br/>after setAt() :
-![](../../images/CString/Array3.png)
+![](../../images/CString/Array3.PNG)
 
 
 * Trim
@@ -107,7 +107,7 @@ Trim() == trimLeft() + trimRight()
 
   wsprintf(wcsBuffer, _T("%s"), strData);
 ```
-![](../../images/CString/Trim.png)
+![](../../images/CString/Trim.PNG)
 
 * Find
 
@@ -122,8 +122,8 @@ Right() extracts the right part of a string.
     AfxMessageBox(strPath.Right(strPath.GetLength() - nIndex ));
   }
 ```
-![](../../images/CString/Find.png)
-![](../../images/CString/Find2.png)
+![](../../images/CString/Find.PNG)
+![](../../images/CString/Find2.PNG)
 
 
 * ReverseFind
@@ -134,5 +134,5 @@ Right() extracts the right part of a string.
  AfxMessageBox(strPath.Left(nIndex));
  AfxMessageBox(strPath.Right(strPath.GetLength() - nIndex - 1));
 ```
-![](../../images/CString/ReverseFind.png)
-![](../../images/CString/ReverseFind2.png)
+![](../../images/CString/ReverseFind.PNG)
+![](../../images/CString/ReverseFind2.PNG)
