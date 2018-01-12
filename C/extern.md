@@ -25,6 +25,6 @@ extern int g_data5 = 0; // (5)
 
 * #1 throw link error with duplicate declarations.
 * #2 work well
-* #3 throw link error caused by duplicate declarations because the variable are treated as general global variable when initialized at the same time as declaration.
+* #3 throw link error caused by duplicate declarations because the variable is treated as a general global variable when initialized at the same time as declaration.
 * #4 throw link error because there is not a variable referenced.
 * #5 is treated as a general global variable. there is no error, there is no meaning that add the extern keyword.
