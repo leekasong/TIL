@@ -136,3 +136,6 @@ Right() extracts the right part of a string.
 ```
 ![](../../images/CString/ReverseFind.PNG)
 ![](../../images/CString/ReverseFind2.PNG)
+
+#### reference
+https://www.youtube.com/channel/UCdGTtaI-ERLjzZNLuBj3X6A
