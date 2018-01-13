@@ -13,9 +13,9 @@
 ```
     /* OninitialDialog() */
     HRGN h_region;
-	h_region = ::CreateEllipticRgn(0, 0, 150, 150);
-	SetWindowRgn(h_region, TRUE);
-	DeleteObject(h_region);
+    h_region = ::CreateEllipticRgn(0, 0, 150, 150);
+    SetWindowRgn(h_region, TRUE);
+    DeleteObject(h_region);
 ```
 
 #### reference
