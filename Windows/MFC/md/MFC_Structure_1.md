@@ -2,7 +2,7 @@
 
 ### MainFrame & View
 
-![](../../images/MFC Structures/Window Structure.png)
+![](../../images/MFC_Structures/Window_Structure.png)
 
 * status bar and tool bar are docked to the MainFrame.
 
