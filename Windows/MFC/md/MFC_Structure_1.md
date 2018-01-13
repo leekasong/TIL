@@ -11,7 +11,7 @@
 
 <br/>
 
-##### how to add message processor into MFC Class
+#### how to add message processor into MFC Class
 
 step 1
 ![](../../images/MFC_Structures/SDI_001.png)
@@ -29,7 +29,7 @@ step 3
 <br />
 
 
-##### how to add menu handler
+#### how to add menu handler
 
 step1
 ![](../../images/MFC_Structures/SDI_004.png)
@@ -47,7 +47,7 @@ step3
 <br />
 
 
-##### toolbar handler can be added using id
+#### toolbar handler can be added using id
 
 step1
 ![](../../images/MFC_Structures/SDI_007.png)
