@@ -32,6 +32,9 @@ step 3
 #### how to add menu handler
 
 step1
+
+<br />
+
 ![](../../images/MFC_Structures/SDI_004.png)
 
 <br />
