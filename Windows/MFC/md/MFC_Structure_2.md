@@ -1,6 +1,6 @@
 # MFC Structure 2
 
-![](../../images/MFC Structures/GUI.png)
+![](../../images/MFC_Structures/GUI.png)
 
 ##### CApp has InitInstance()
 

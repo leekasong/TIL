@@ -14,17 +14,17 @@
 ##### how to add message processor into MFC Class
 
 step 1
-![](../../images/MFC Structures/SDI_001.png)
+![](../../images/MFC_Structures/SDI_001.png)
 
 <br />
 
 step 2
-![](../../images/MFC Structures/SDI_002.png)
+![](../../images/MFC_Structures/SDI_002.png)
 
 <br />
 
 step 3
-![](../../images/MFC Structures/SDI_003.png)
+![](../../images/MFC_Structures/SDI_003.png)
 
 <br />
 
@@ -32,17 +32,17 @@ step 3
 ##### how to add menu handler
 
 step1
-![](../../images/MFC Structures/SDI_004.png)
+![](../../images/MFC_Structures/SDI_004.png)
 
 <br />
 
 step2
-![](../../images/MFC Structures/SDI_005.png)
+![](../../images/MFC_Structures/SDI_005.png)
 
 <br />
 
 step3
-![](../../images/MFC Structures/SDI_006.png)
+![](../../images/MFC_Structures/SDI_006.png)
 
 <br />
 
@@ -50,12 +50,12 @@ step3
 ##### toolbar handler can be added using id
 
 step1
-![](../../images/MFC Structures/SDI_007.png)
+![](../../images/MFC_Structures/SDI_007.png)
 
 <br />
 
 step2
-![](../../images/MFC Structures/SDI_008.png)
+![](../../images/MFC_Structures/SDI_008.png)
 
 <br />
 
