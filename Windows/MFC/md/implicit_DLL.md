@@ -4,14 +4,14 @@
 * PE헤더에 DLL에 대한 정보를 담는다.
 * DLL에 있는 함수를 사용할 때, 운영체제는 PE 헤더에 있는 DLL 정보를 보고 해당 함수를 호출한다.
 
-![](../../images/DLL/1.png)  
+![](../../images/DLL/1.PNG)  
 
-![](../../images/DLL/2.png)  
+![](../../images/DLL/2.PNG)  
 
 
 * 아래와 같이 참조할 함수를 작성해준다. 그리고 빌드한다.
 
-![](../../images/DLL/3.png)  
+![](../../images/DLL/3.PNG)  
 
 
 ```
@@ -44,11 +44,11 @@ BOOL WINAPI GetModulePath(CString& strPath) {
 
 * 빌드시 생성되는 lib 파일을 복사한다.  
 
-![](../../images/DLL/5.png)  
+![](../../images/DLL/5.PNG)  
 
 * stdafx.h에 아래와 같은 코드를 작성한다.
 
-![](../../images/DLL/6.png)  
+![](../../images/DLL/6.PNG)  
 
 
 ```
@@ -60,14 +60,14 @@ __declspec(dllimport)BOOL WINAPI GetModulePath(CString& strPath);
 
 * 함수를 사용한다.  
 
-![](../../images/DLL/7.png)  
+![](../../images/DLL/7.PNG)  
 
 ### explicit DLL도 지원해야 할 때  
 
 * 암시적 DLL만 지원해도 되는 경우면 위의 코드대로 해도 괜찮으나, 명시적 DLL로도 가능하게끔 DLL 파일을 제공해야 한다면 \__declspec(dllimport)와 같은 코드 때문에 오류가 나게 됩니다.
 * 따라서 \__declspec(dllimport)를 지우고, dll의 .def 파일에서 아래와 같이 수정합니다.
 
-![](../../images/DLL/8.png)  
+![](../../images/DLL/8.PNG)  
 
 #### reference
 Visual C++ 2008 MFC 윈도우 프로그래밍
