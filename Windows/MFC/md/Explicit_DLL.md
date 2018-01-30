@@ -1,6 +1,6 @@
 # Explicit DLL (명시적 DLL)
 
-![](../../images/DLL/9.png)  
+![](../../images/DLL/9.PNG)  
 
 ```
 void CTestDLLExDlg::OnBnClickedButtonGetpath()
