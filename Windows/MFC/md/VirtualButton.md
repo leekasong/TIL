@@ -53,7 +53,7 @@ void CExamFontView::OnLButtonUp(UINT nFlags, CPoint point)
 	CView::OnLButtonUp(nFlags, point);
 }
 ```
-![](../../images/VirtualButton/1.png)
+![](../../images/VirtualButton/1.PNG)
 * Draw3dRect()은 볼록나오게 보이거나, 오목하게 보이도록 그릴 수 있게 한다.
 
 #### reference

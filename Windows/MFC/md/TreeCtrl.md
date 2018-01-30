@@ -58,7 +58,7 @@ void CExamTreeCtrlDlg::CheckupChild(HTREEITEM hItem) {
 ```
 * 트리컨트롤이기 때문에, 전체 조회할 때는 재귀적으로 접근해야한다.
 
-![](../../images/TreeCtrl/1.png)
+![](../../images/TreeCtrl/1.PNG)
 
 ### 드래그앤드랍
 ```
@@ -180,9 +180,9 @@ void CExamDragAndDropDlg::OnLButtonUp(UINT nFlags, CPoint point)
 * GetItem()으로 인덱스에 해당하는 노드를 찾고, 정보를 저장한다. 그 정보를 바탕으로 목적지 리스트뷰에 동일한 노드를 만든다.
 * HitTest()는 명시한 위치에 노드가 있을 경우 해당 인덱스를 반환한다.
 
-![](../../images/TreeCtrl/2.png)
+![](../../images/TreeCtrl/2.PNG)
 
-![](../../images/TreeCtrl/3.png)
+![](../../images/TreeCtrl/3.PNG)
 
 #### reference
 Visual C++ 2008 MFC 윈도우 프로그래밍

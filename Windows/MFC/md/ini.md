@@ -1,8 +1,8 @@
 # ini 파일 다루기
 
 누가 봐도 설정 파일 같이 생긴 ini 파일이다.  
-![](../../images/Ini/1.png)  
-![](../../images/Ini/2.png)  
+![](../../images/Ini/1.PNG)  
+![](../../images/Ini/2.PNG)  
 
 ### ini 파일 쓰기
 ```

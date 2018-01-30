@@ -21,10 +21,10 @@ void CExamListComboDlg::OnBnClickedAddBtn()
 * AddString() : 리스트박스의 기본설정인 내림차순 정렬에 따라 문자열을 넣는다.
 
 InsertString()  
-![](../../images/ListBox/1.png)  
+![](../../images/ListBox/1.PNG)  
 
 AddString()  
-![](../../images/ListBox/2.png)  
+![](../../images/ListBox/2.PNG)  
 
 
 ### 찾기

@@ -24,8 +24,8 @@ for (int i = 0; i < 5; i++) {
 m_list.SetImageList(&m_imageList, LVSIL_NORMAL);
 
 ```
-![](../../images/ListCtrl/2.png)
-![](../../images/ListCtrl/1.png)
+![](../../images/ListCtrl/2.PNG)
+![](../../images/ListCtrl/1.PNG)
 
 ### 작은 아이콘
 
@@ -61,8 +61,8 @@ BOOL CExamListCtrlDlg::OnInitDialog()
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 ```
-![](../../images/ListCtrl/4.png)
-![](../../images/ListCtrl/3.png)
+![](../../images/ListCtrl/4.PNG)
+![](../../images/ListCtrl/3.PNG)
 
 ### 에딧컨트롤 출력 및 텍스트 수정
 
@@ -79,7 +79,7 @@ void CExamListCtrlDlg::OnLvnEndlabeleditList1(NMHDR *pNMHDR, LRESULT *pResult)
 }
 
 ```
-![](../../images/ListCtrl/5.png)
+![](../../images/ListCtrl/5.PNG)
 
 ### 체크박스 넣기, 삭제하기
 
@@ -158,7 +158,7 @@ m_List.SetExtendedStyle(dwExStyle |
     LVS_EX_CHECKBOXES | LVS_EX_BORDERSELECT);
 ```
 
-![](../../images/ListCtrl/8.png)
+![](../../images/ListCtrl/8.PNG)
 
 * 대화상자에서 작업시, 프로젝트 만들 때 common control manifest를 꼭 체크할 것!!!!
 * 그래야 XP 이후의 기술인 그룹화를 사용할 수 있음.
@@ -290,7 +290,7 @@ void CExamHeadCtrlDlg::UpdateArrow() {
 	p_header->SetItem(0, &hdItem);
 }
 ```
-![](../../images/ListCtrl/9.png)
+![](../../images/ListCtrl/9.PNG)
 
 * 각 아이템의 lParam에 유일한 값을 설정
 * compare 콜백함수 작성 : flags를 통해 정렬 기준을 설정하고, CString의 compare 함수로 알파벳순으로 정렬
@@ -344,7 +344,7 @@ int CExamSysImageDlg::GetIconIndexFromFile(CString str) {
 }
 ```
 
-![](../../images/ListCtrl/10.png)
+![](../../images/ListCtrl/10.PNG)
 
 * 시스템 이미지를 구하는 함수는 SHGetFileInfo()이다.
 * 인자 중 하나인 SHFILEINFO에 icon 핸들 등의 정보를 가질 수 있다.

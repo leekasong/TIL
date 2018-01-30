@@ -34,7 +34,7 @@ void CExamRgnView::OnPaint()
 
 ```
 
-![](../../images/Rgn/1.png)
+![](../../images/Rgn/1.PNG)
 
 
 ```
@@ -82,4 +82,4 @@ void CExamRgn2View::OnMouseMove(UINT nFlags, CPoint point)
 }
 
 ```
-![](../../images/Rgn/2.png)
+![](../../images/Rgn/2.PNG)

@@ -27,7 +27,7 @@ void CExamRegiDlg::OnBnClickedButton1()
 }
 ```
 
-![](../../images/Registry/1.png)
+![](../../images/Registry/1.PNG)
 
 ### 레지스트리 삭제
 
