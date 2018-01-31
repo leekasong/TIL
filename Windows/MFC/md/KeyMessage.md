@@ -10,6 +10,32 @@
 가상 키의 비트  
 http://aesire.tistory.com/19
 
+### 다이얼로그에서 KeyDown 메시지 받기
+* 컨트롤이 있으면 keyDown 메시지를 받기 어렵다.
+* PretranslateMessage()를 이용한다.  
+
+```
+BOOL CTestChar2Dlg::PreTranslateMessage(MSG* pMsg)
+{
+	UINT msg = pMsg->message;
+	if (msg == WM_KEYDOWN) {
+		CString str;
+		int lo = LOWORD(pMsg->wParam);
+		//0 key code : 0x30
+		if (lo == 0x30) {
+			SetDlgItemText(IDC_STATIC, _T("0이 눌렸닷!"));
+		}
+
+	}
+
+	return CDialogEx::PreTranslateMessage(pMsg);
+}
+
+```
+KeyCode 관련 MSDN 링크  
+https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx
+https://msdn.microsoft.com/ko-kr/library/windows/desktop/ms646280(v=vs.85).aspx
+
 ### 시스템 키보드 메시지
 
 Alt나 F10 키는 System Key로 분류. 메세지 이름은 WM_SYSKEYDOWN, WM_SYSKEYUP 이다.

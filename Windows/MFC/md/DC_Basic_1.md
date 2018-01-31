@@ -56,9 +56,9 @@ void CExamDCView::OnPaint()
 	dc.SelectObject(p_old_brush);
 }
 ```
-사용한 비트맵  
+
 ![](../../images/DC/2.png)  
-패턴브러쉬로 적용  
+
 ![](../../images/DC/3.png)  
 
 
