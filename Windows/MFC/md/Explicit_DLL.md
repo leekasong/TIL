@@ -1,5 +1,7 @@
 # Explicit DLL (명시적 DLL)
 
+* PE에 담기지 않는다.
+
 ![](../../images/DLL/9.PNG)  
 
 ```
