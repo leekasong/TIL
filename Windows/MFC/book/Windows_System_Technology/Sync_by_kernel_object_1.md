@@ -73,3 +73,6 @@ void main() {
 * 해당 커널 객체를 시그널 상태로 만들고, WaitForSingleObject()하는 것과 같은 동작.
 * 그러나 하나의 함수이기 때문에 좀 더 원자성이 보장되며, 하나의 함수만 호출함으로써 커널 모드와 유저 모드를 두 번 왔다갔다 하는 비효율(성능저하)을 막는다.
 * 상당히 유용하게 쓰이는 함수
+
+#### reference
+![](../../../images/Windows_System_Technology/6.PNG)

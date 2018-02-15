@@ -49,3 +49,7 @@ https://msdn.microsoft.com/ko-kr/library/windows/desktop/ms685100(v=vs.85).aspx
 * GUI 스레드에 대해서 메시지큐로 인해 깨어나면 2만큼 증가
 * 포그라운드 스레드가 대기에서 깨어나면 '현재 우선순위'를 기준으로 1 또는 2 만큼 증가
 * 기아 스레드를 위한 부스팅.
+
+
+#### reference
+![](../../../images/Windows_System_Technology/6.PNG)

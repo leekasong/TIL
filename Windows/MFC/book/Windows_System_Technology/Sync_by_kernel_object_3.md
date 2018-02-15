@@ -13,3 +13,6 @@
 
 ### 넌시그널 상태로 만들기
 * Mutex와 마찬가지로 WaitForXXX로 수행한다.
+
+#### reference
+![](../../../images/Windows_System_Technology/6.PNG)

@@ -97,3 +97,7 @@ void main() {
 ### 중복 대기
 * 뮤텍스를 소유한 스레드가 중복적으로 WaitForXXX를 호출할 경우, 블록되지 않고 바로 넘어간다.
 * 다만 WaitForXXX를 하는 만큼 ReleaseMutex()를 호출해야 한다.
+
+
+#### reference
+![](../../../images/Windows_System_Technology/6.PNG)
