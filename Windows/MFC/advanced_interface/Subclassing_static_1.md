@@ -1,4 +1,4 @@
-# 스태틱 컨트롤 서브클래싱
+# 스태틱 컨트롤 서브클래싱 1
 
 * 마우스가 스태틱 컨트롤 위에 있을 때  
 
@@ -134,5 +134,6 @@ void CHTStatic::OnLButtonDown(UINT nFlags, CPoint point)
 }
 
 ```
+
 
 ![](../../images/advanced_interface/1.PNG)  
