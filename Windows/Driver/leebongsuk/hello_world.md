@@ -67,3 +67,6 @@ sc start examdriver2
 * 또한 DebugView는 아래와 같이 설정을 미리 해둔다.
 
 ![](../../images/Driver/leebongsuk/8.PNG)  
+
+#### reference
+하제소프트 https://www.youtube.com/channel/UC7Ek4hbKRdWT1idaZLz-F_Q
