@@ -1,4 +1,4 @@
-# 레지스트리
+# 레지스트리 1
 
 ### 레지스트리 열기
 ```
@@ -63,6 +63,8 @@ void CExamRegiDlg::OnBnClickedButton2()
 
 }
 ```
+
+
 
 
 #### reference
