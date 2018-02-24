@@ -31,6 +31,32 @@ void CExamMenu1View::OnRButtonDown(UINT nFlags, CPoint point)
 ![](../../images/Menu/1.png)
 
 
+### 메뉴 항목 제어.
+
+![](../../images/Menu/2.PNG)
+
+* 툴바는 메뉴를 통해 제어
+* 메뉴는 핸들러를 통해 제어한다.
+
+#### 메뉴 항목 온오프하기
+* 재생 버튼을 누르면 멈춤 버튼이 활성화되고, 재생버튼은 비활성화되게 한다.
+* 이는 OnUpdateMenu 핸들러를 통해 구현한다.
+
+![](../../images/Menu/3.PNG)  
+
+```
+void CExam2DGraphView::OnUpdateMenuStart(CCmdUI *pCmdUI)
+{
+	pCmdUI->Enable(m_bStart);
+}
+
+
+void CExam2DGraphView::OnUpdateMenuStop(CCmdUI *pCmdUI)
+{
+	pCmdUI->Enable(!m_bStart);
+}
+```
+
 
 #### reference
 Visual C++ 2008 MFC 윈도우 프로그래밍

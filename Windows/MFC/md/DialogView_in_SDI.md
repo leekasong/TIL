@@ -6,7 +6,7 @@
 
 * 그러면 에러 뜨는 런타임 클래스 코드 없애고, 아래와 같은 코드 작성  
 
-![](../../images/DialogViewInSDI/2.PNG)  
+![](../../images/DialogViewInSDI/4.PNG)  
 
 
 ```

@@ -19,7 +19,7 @@ void CExamFontView::OnPaint()
 		font.CreateFontIndirectW(&lf);
 		p_old_font = dc.SelectObject(&font);
 		dc.TextOutW(10, ny, _T("Test String"));
-		dc.SelectObject(&font);
+		dc.SelectObject(p_old_font);
 
 		font.DeleteObject();
 	}
