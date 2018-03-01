@@ -58,3 +58,13 @@ void CExamTrayDlg::OnClose()
 	CDialogEx::OnClose();
 }
 ```
+
+### 실행시 바로 트레이아이콘만 띄우기
+
+* 윈도우는 ShowWindow()를 통해 제어하면 된다.
+* 대화상자의 경우, OnInitialDialog()에서 아래와 같은 코드를 넣어준다.
+
+```
+ShowWindow(SW_SHOWMINIMIZED);
+PostMessage(WM_SHOWWINDOW, FALSE, SW_OTHERUNZOOM);
+```
